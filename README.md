@@ -13,7 +13,7 @@ Web-Workshop/
 ├── JS/         # HTML + JavaScript for interactivity (DOM, events)
 ├── Bootstrap/  # Responsive layouts & components using Bootstrap 5 CDN
 └── README.md   # You're reading it now
-
+```
 
 ---
 
