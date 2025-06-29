@@ -6,12 +6,13 @@ Welcome to the **Web Development Workshop Repository**! This repository contains
 
 ## 📁 Folder Structure
 
+```text
 Web-Workshop/
-├── HTML/ # Basic HTML examples (structure, tags, lists, tables, forms)
-├── CSS/ # HTML files with internal/external CSS for styling
-├── JS/ # HTML + JavaScript for interactivity (DOM, events)
-├── Bootstrap/ # Responsive layouts & components using Bootstrap 5 CDN
-└── README.md # You're reading it now
+├── HTML/       # Basic HTML examples (structure, tags, lists, tables, forms)
+├── CSS/        # HTML files with internal/external CSS for styling
+├── JS/         # HTML + JavaScript for interactivity (DOM, events)
+├── Bootstrap/  # Responsive layouts & components using Bootstrap 5 CDN
+└── README.md   # You're reading it now
 
 
 ---
