@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to JavaScript Demo</h1>
+
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+    <button onclick="greetUser()">Greet</button>
+
+    <div id="output"></div>
+
+    <script>
+        function greetUser() {
+            const name = document.getElementById("nameInput").value;
+            const output = document.getElementById("output");
+            if (name.trim() === "") {
+                output.innerHTML = "Please enter a valid name.";
+                output.style.color = "red";
+            } else {
+                output.innerHTML = "Hello, " + name + "! Welcome to JavaScript.";
+                output.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
