@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Form</title>
+</head>
+<body>
+
+  <h2>Student Registration Form</h2>
+
+  <form>
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="sports" name="hobby" value="Sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="reading" name="hobby" value="Reading">
+    <label for="reading">Reading</label><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="time">Preferred Time:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+
+    <label for="color">Favorite Color:</label><br>
+    <input type="color" id="color" name="color"><br><br>
+
+    <label for="range">Satisfaction Level:</label><br>
+    <input type="range" id="range" name="range"><br><br>
+
+    <label for="file">Upload Resume:</label><br>
+    <input type="file" id="file" name="file"><br><br>
+
+    <label for="url">Website:</label><br>
+    <input type="url" id="url" name="url"><br><br>
+
+    <label for="search">Search:</label><br>
+    <input type="search" id="search" name="search"><br><br>
+
+    <label for="tel">Phone Number:</label><br>
+    <input type="tel" id="tel" name="tel"><br><br>
+
+    <input type="hidden" id="user_id" name="user_id" value="12345">
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <label for="branch">Select Branch:</label><br>
+    <select id="branch" name="branch">
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="me">Mechanical</option>
+      <option value="ce">Civil</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
