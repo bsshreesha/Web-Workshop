@@ -51,4 +51,4 @@ git clone https://github.com/bsshreesha/Web-Workshop.git
 
 If you found this helpful, please consider starring the repository to support the project:
 
-👉 [Click here to star this repo](https://github.com/bsshreesha/Web-Workshop/stargazers)
+[![Star this repository](https://img.shields.io/github/stars/bsshreesha/Web-Workshop.svg?style=social)](https://github.com/bsshreesha/Web-Workshop/)
