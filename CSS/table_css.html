@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Table - CSS Styled</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 30px;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: auto;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Marks Table</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Arjun</td>
+        <td>Math</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Bhavna</td>
+        <td>Science</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Charan</td>
+        <td>English</td>
+        <td>91</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
