@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Input Types Form</title>
+    <!-- Latest Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        label {
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="card border-danger">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">All HTML Input Fields</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="text" class="form-label">Text</label>
+                            <input type="text" id="text" name="text" class="form-control" placeholder="Enter text">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Enter password">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="number" class="form-label">Number</label>
+                            <input type="number" id="number" name="number" class="form-control"
+                                placeholder="Enter number">
+                        </div>
+                        <div class="col-md-6 mb-3 d-flex">
+                            <div style="flex: 0; min-width: 115px; max-width: 120px; margin-right: 0px;">
+                                <label for="dialCode" class="form-label">Dial Code <span class="text-danger">*</span></label>
+                                <select id="dialCode" name="dialCode" class="form-select">
+                                    <option value="" disabled selected>Code</option>
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                </select>
+                                <div class="invalid-feedback" id="dialcode-error">Select dial code.</div>
+                            </div>
+                            <div style="flex: 1; min-width: 150px; padding-left: 0px;">
+                                <label for="mobNum" class="form-label">Mobile Number <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="mobNum" id="mobNum" placeholder="10-digit number" maxlength="10"
+                                    pattern="[0-9]{10}">
+                                <div class="invalid-feedback" id="mobnum-error">Please enter a valid 10-digit mobile number.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="url" class="form-label">URL</label>
+                            <input type="url" id="url" name="url" class="form-control" placeholder="Enter website URL">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="search" class="form-label">Search</label>
+                            <input type="search" id="search" name="search" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label d-block">Checkbox Options</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="check1" name="check1">
+                                <label class="form-check-label" for="check1">Option 1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="check2" name="check2">
+                                <label class="form-check-label" for="check2">Option 2</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label d-block">Radio Options</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="radio1" name="radio" value="A">
+                                <label class="form-check-label" for="radio1">Option A</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="radio2" name="radio" value="B">
+                                <label class="form-check-label" for="radio2">Option B</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="file" class="form-label">File Upload</label>
+                            <input type="file" id="file" name="file" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" id="date" name="date" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="datetime" class="form-label">Date-Time Local</label>
+                            <input type="datetime-local" id="datetime" name="datetime" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="month" class="form-label">Month</label>
+                            <input type="month" id="month" name="month" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="week" class="form-label">Week</label>
+                            <input type="week" id="week" name="week" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" id="time" name="time" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="range" class="form-label">Range</label>
+                            <input type="range" id="range" name="range" class="form-range">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="color" class="form-label">Color</label>
+                            <input type="color" id="color" name="color" class="form-control form-control-color">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="textarea" class="form-label">Textarea</label>
+                            <textarea id="textarea" name="textarea" class="form-control" rows="3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="hidden" class="form-label">Hidden Input</label>
+                            <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
+                            <input type="text" class="form-control" value="Hidden is not visible here" disabled>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="btn" class="form-label">Generic Button</label><br>
+                            <input type="button" id="btn" name="btn" class="btn btn-outline-secondary" value="Click Me">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="submit" class="form-label">Submit Button</label><br>
+                            <input type="submit" id="submit" name="submit" class="btn btn-success" value="Submit">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="reset" class="form-label">Reset Button</label><br>
+                            <input type="reset" id="reset" name="reset" class="btn btn-warning" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
