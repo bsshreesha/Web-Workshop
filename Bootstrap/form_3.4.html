@@ -20,7 +20,7 @@
                 <h4 class="panel-title">All HTML Input Fields</h4>
             </div>
             <div class="panel-body">
-                <form>
+                <form id="inputForm" class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="text">Text</label>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter email">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" autocomplete="off">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="number">Number</label>
@@ -47,11 +47,11 @@
                                 <label for="dialCode">Dial Code <span class="text-danger">*</span></label>
                                 <select id="dialCode" name="dialCode" class="form-control">
                                     <option value="" disabled selected>Code</option>
-                                    <option value="+91">+91</option>
-                                    <option value="+1">+1</option>
-                                    <option value="+44">+44</option>
-                                    <option value="+971">+971</option>
-                                    <option value="+61">+61</option>
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+61">🇦🇺 +61</option>
                                 </select>
                             </div>
                             <div style="flex: 1; padding-left: 0px;">
