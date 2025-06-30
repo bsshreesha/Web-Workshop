@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee with Nested Address</title>
+</head>
+
+<body>
+    <script>
+        const employee = {
+            name: prompt("Enter employee name:"),
+            address: {
+                city: prompt("Enter city:"),
+                zip: prompt("Enter ZIP code:")
+            }
+        };
+
+        document.write("<h2>Employee Address</h2>");
+        document.write(`Name: ${employee.name}<br>`);
+        document.write(`City: ${employee.address.city}<br>`);
+        document.write(`ZIP: ${employee.address.zip}`);
+    </script>
+</body>
+
+</html>
