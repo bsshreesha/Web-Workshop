@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Onchange Event</title></head>
+<body>
+  <h3>Pick a Color</h3>
+  <input type="color" onchange="changeBg(this.value)">
+
+  <script>
+    function changeBg(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
