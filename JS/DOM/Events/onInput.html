@@ -19,3 +19,21 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>How are you feeling? (1–5)</h3>
+    <input type="range" min="1" max="5" value="3" oninput="updateMood(this.value)">
+    <p id="mood" style="font-size: 2em;">😐</p>
+
+    <script>
+        function updateMood(val) {
+            const faces = ["😢", "😞", "😐", "😊", "😁"];
+            document.getElementById("mood").textContent = faces[val - 1];
+        }
+    </script>
+</body>
+
+</html>
