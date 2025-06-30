@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <ul>
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+  </ul>
+  <button onclick="colorItems()">Color All</button>
+
+  <script>
+    function colorItems() {
+      const items = document.querySelectorAll(".item");
+      items.forEach(item => item.style.color = "green");
+    }
+  </script>
+</body>
+</html>
