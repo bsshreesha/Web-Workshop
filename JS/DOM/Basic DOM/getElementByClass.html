@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p class="note">Note 1</p>
+    <p class="note">Note 2</p>
+    <button onclick="highlight()">Highlight Notes</button>
+
+    <script>
+        function highlight() {
+            const notes = document.getElementsByClassName("note");
+            for (let i = 0; i < notes.length; i++) {
+                notes[i].style.backgroundColor = "yellow";
+            }
+        }
+    </script>
+</body>
+
+</html>
