@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Move your mouse over the box to draw!</h3>
+    <div id="canvas"
+        style="width:300px;height:200px;border:1px solid rgb(255, 0, 0);position:relative;background-color:whitesmoke"
+        onmousemove="drawDot(event)">
+    </div>
+
+    <script>
+        function drawDot(e) {
+            let dot = document.createElement("div");
+            dot.style.width = "4px";
+            dot.style.height = "4px";
+            dot.style.borderRadius = "50%";
+            dot.style.backgroundColor = "red";
+            dot.style.position = "absolute";
+            dot.style.left = e.offsetX + "px";
+            dot.style.top = e.offsetY + "px";
+            document.getElementById("canvas").appendChild(dot);
+        }
+    </script>
+</body>
+
+</html>
