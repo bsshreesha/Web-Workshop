@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Oninput Event</title>
+</head>
+
+<body>
+    <h3>Type something</h3>
+    <input type="text" id="textInput" oninput="showLength()">
+    <p id="output"></p>
+
+    <script>
+        function showLength() {
+            let val = document.getElementById("textInput").value;
+            document.getElementById("output").innerText = "Characters: " + val.length;
+        }
+    </script>
+</body>
+
+</html>
