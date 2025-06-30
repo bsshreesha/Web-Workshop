@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Double-click the emoji to clone it!</h3>
+    <div id="zone" style="border: 1px dashed gray; padding: 20px; min-height: 100px;"></div>
+    <div id="emoji" ondblclick="cloneEmoji()" style="font-size: 2em; cursor: pointer;">🌟</div>
+
+    <script>
+        function cloneEmoji() {
+            const clone = document.getElementById("emoji").cloneNode(true);
+            clone.style.margin = "5px";
+            document.getElementById("zone").appendChild(clone);
+        }
+    </script>
+</body>
+
+</html>
