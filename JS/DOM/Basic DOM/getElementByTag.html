@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Header 1</h2>
+  <h2>Header 2</h2>
+  <button onclick="colorHeaders()">Color Headers</button>
+
+  <script>
+    function colorHeaders() {
+      const headers = document.getElementsByTagName("h2");
+      for (let i = 0; i < headers.length; i++) {
+        headers[i].style.color = "blue";
+      }
+    }
+  </script>
+</body>
+</html>
