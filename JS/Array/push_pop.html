@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Push Pop Array</title></head>
+<body>
+  <h3>Push & Pop Demo</h3>
+  <script>
+    let stack = [];
+    stack.push("First");
+    stack.push("Second");
+    stack.push("Third");
+    document.write("Stack: " + stack.join(", ") + "<br>");
+
+    let popped = stack.pop();
+    document.write("After popping: " + stack.join(", ") + "<br>");
+    document.write("Popped item: " + popped);
+  </script>
+</body>
+</html>
