@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="container">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+  </div>
+  <button onclick="changeFirst()">Change First</button>
+
+  <script>
+    function changeFirst() {
+      const firstPara = document.querySelector(".container p");
+      firstPara.style.fontWeight = "bold";
+    }
+  </script>
+</body>
+</html>
