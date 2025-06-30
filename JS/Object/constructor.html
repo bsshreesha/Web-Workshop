@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Constructor Function</title>
+</head>
+<body>
+  <script>
+    function Book(title, author) {
+      this.title = title;
+      this.author = author;
+    }
+
+    const title = prompt("Enter book title:");
+    const author = prompt("Enter book author:");
+
+    const myBook = new Book(title, author);
+
+    document.write("<h2>Book Details</h2>");
+    document.write(`Title: ${myBook.title}<br>`);
+    document.write(`Author: ${myBook.author}`);
+  </script>
+</body>
+</html>
