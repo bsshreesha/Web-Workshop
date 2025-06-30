@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Info with Loop</title>
+</head>
+
+<body>
+    <script>
+        const user = {
+            username: prompt("Enter username:"),
+            email: prompt("Enter email:"),
+            isAdmin: confirm("Is the user an admin?")
+        };
+
+        document.write("<h2>User Information</h2>");
+        for (let key in user) {
+            document.write(`${key}: ${user[key]}<br>`);
+        }
+    </script>
+</body>
+
+</html>
