@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <script>
+<script>
     const student = {
-      name: "Alice",
-      age: 20,
-      course: "Computer Science"
+        name: prompt("Enter student name:"),
+        age: prompt("Enter age:"),
+        course: prompt("Enter course:")
     };
 
-    document.write("Name: " + student.name + "<br>");
-    document.write("Age: " + student.age + "<br>");
-    document.write("Course: " + student["course"]);
-  </script>
-</body>
-</html>
+    document.write(`<h3>Student Info</h3>`);
+    document.write(`Name: ${student.name}<br>`);
+    document.write(`Age: ${student.age}<br>`);
+    document.write(`Course: ${student.course}<br>`);
+</script>
+  
