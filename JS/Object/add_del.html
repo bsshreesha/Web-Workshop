@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Car Object Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .property {
+            margin: 10px 0;
+        }
+
+        .property span {
+            font-weight: bold;
+        }
+
+        button {
+            margin: 5px;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .del-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Car Object Editor</h2>
+    <button class="edit-btn" onclick="editProperty('brand')">Edit Brand</button>
+    <button class="edit-btn" onclick="editProperty('model')">Edit Model</button>
+
+    <div id="carDisplay" class="card"></div>
+
+    <script>
+        let car = {
+            brand: "Toyota",
+            model: "Corolla"
+        };
+
+        function editProperty(prop) {
+            const value = prompt(`Enter new value for ${prop}:`);
+            if (value !== null && value.trim() !== "") {
+                car[prop] = value.trim();
+                displayCar();
+            }
+        }
+
+        function deleteProperty(prop) {
+            if (confirm(`Are you sure you want to delete '${prop}'?`)) {
+                delete car[prop];
+                displayCar();
+            }
+        }
+
+        function displayCar() {
+            const display = document.getElementById("carDisplay");
+            display.innerHTML = "<h3>Car Properties</h3>";
+            if (Object.keys(car).length === 0) {
+                display.innerHTML += "<p>No properties found.</p>";
+            } else {
+                for (let key in car) {
+                    display.innerHTML += `
+            <div class="property">
+              <span>${key}:</span> ${car[key]}
+              <button class="del-btn" onclick="deleteProperty('${key}')">Delete</button>
+            </div>
+          `;
+                }
+            }
+        }
+
+        // Initial render
+        displayCar();
+    </script>
+
+</body>
+
+</html>
