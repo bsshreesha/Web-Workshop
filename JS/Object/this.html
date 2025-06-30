@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Full Name using Object Method</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            firstName: prompt("Enter first name:"),
+            lastName: prompt("Enter last name:"),
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.write("<h2>Person Information</h2>");
+        document.write("Full Name: " + person.fullName());
+    </script>
+</body>
+
+</html>
