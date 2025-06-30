@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="text" onkeydown="showKey(event)" placeholder="Type something..." />
+  <p id="keyDisplay"></p>
+
+  <script>
+    function showKey(event) {
+      document.getElementById("keyDisplay").innerText = "You pressed: " + event.key;
+    }
+  </script>
+</body>
+</html>
