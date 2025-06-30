@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table - For Loop</title>
+</head>
+<body>
+  <script>
+    let num = parseInt(prompt("Enter a number to print its multiplication table:"));
+
+    if (!isNaN(num)) {
+      document.write("<h2>Multiplication Table of " + num + "</h2>");
+      for (let i = 1; i <= 10; i++) {
+        document.write(num + " × " + i + " = " + (num * i) + "<br>");
+      }
+    } else {
+      alert("Invalid number entered!");
+    }
+  </script>
+</body>
+</html>
