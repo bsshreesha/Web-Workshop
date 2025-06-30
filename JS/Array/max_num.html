@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find Max</title>
+</head>
+
+<body>
+    <h3>Find Maximum Number</h3>
+    <script>
+        let numbers = [12, 45, 78, 34, 90, 5, 198];
+        let max = numbers[0];
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        document.write("Maximum value is: " + max);
+    </script>
+</body>
+
+</html>
