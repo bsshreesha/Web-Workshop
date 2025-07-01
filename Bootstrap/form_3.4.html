@@ -10,6 +10,26 @@
         label {
             font-weight: 500;
         }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control[type="range"] {
+            padding: 0;
+            height: auto;
+        }
+
+        .section-divider {
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+
+        .btn-block-inline {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
@@ -17,19 +37,19 @@
     <div class="container" style="margin-top: 30px;">
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h4 class="panel-title">All HTML Input Fields</h4>
+                <h4 class="panel-title"><span class="glyphicon glyphicon-edit"></span> All HTML Input Fields</h4>
             </div>
             <div class="panel-body">
                 <form id="inputForm" class="needs-validation" novalidate>
                     <div class="row">
+                        <!-- Basic Text Inputs -->
                         <div class="col-md-6 form-group">
                             <label for="text">Text</label>
                             <input type="text" id="text" name="text" class="form-control" placeholder="Enter text">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" class="form-control"
-                                placeholder="Enter password">
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="email">Email</label>
@@ -37,13 +57,12 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="number">Number</label>
-                            <input type="number" id="number" name="number" class="form-control"
-                                placeholder="Enter number">
+                            <input type="number" id="number" name="number" class="form-control" placeholder="Enter number">
                         </div>
 
-                        <!-- Mobile number and dial code layout using display: flex -->
+                        <!-- Mobile Dial Code -->
                         <div class="col-md-6 form-group" style="display: flex;">
-                            <div style="min-width: 115px; max-width: 120px; margin-right: 0px;">
+                            <div style="min-width: 95px; max-width: 120px; margin-right: 0px;">
                                 <label for="dialCode">Dial Code <span class="text-danger">*</span></label>
                                 <select id="dialCode" name="dialCode" class="form-control">
                                     <option value="" disabled selected>Code</option>
@@ -54,10 +73,9 @@
                                     <option value="+61">🇦🇺 +61</option>
                                 </select>
                             </div>
-                            <div style="flex: 1; padding-left: 0px;">
+                            <div style="flex: 1;">
                                 <label for="mobNum">Mobile Number <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="mobNum" id="mobNum"
-                                    placeholder="10-digit number" maxlength="10" pattern="[0-9]{10}">
+                                <input type="text" class="form-control" name="mobNum" id="mobNum" placeholder="10-digit number" maxlength="10" pattern="[0-9]{10}">
                             </div>
                         </div>
 
@@ -70,6 +88,7 @@
                             <input type="search" id="search" name="search" class="form-control" placeholder="Search...">
                         </div>
 
+                        <!-- Checkbox & Radio -->
                         <div class="col-md-6 form-group">
                             <label>Checkbox Options</label><br>
                             <label class="checkbox-inline">
@@ -79,7 +98,6 @@
                                 <input type="checkbox" id="check2" name="check2"> Option 2
                             </label>
                         </div>
-
                         <div class="col-md-6 form-group">
                             <label>Radio Options</label><br>
                             <label class="radio-inline">
@@ -90,6 +108,7 @@
                             </label>
                         </div>
 
+                        <!-- File and Date -->
                         <div class="col-md-6 form-group">
                             <label for="file">File Upload</label>
                             <input type="file" id="file" name="file" class="form-control">
@@ -114,6 +133,7 @@
                             <label for="time">Time</label>
                             <input type="time" id="time" name="time" class="form-control">
                         </div>
+
                         <div class="col-md-6 form-group">
                             <label for="range">Range</label>
                             <input type="range" id="range" name="range" class="form-control">
@@ -122,27 +142,25 @@
                             <label for="color">Color</label>
                             <input type="color" id="color" name="color" class="form-control">
                         </div>
+
                         <div class="col-md-6 form-group">
                             <label for="textarea">Textarea</label>
-                            <textarea id="textarea" name="textarea" class="form-control" rows="3"
-                                placeholder="Enter your message"></textarea>
+                            <textarea id="textarea" name="textarea" class="form-control" rows="3" placeholder="Enter your message"></textarea>
                         </div>
+
                         <div class="col-md-6 form-group">
                             <label for="hidden">Hidden Input</label>
                             <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
                             <input type="text" class="form-control" value="Hidden is not visible here" disabled>
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label for="btn">Generic Button</label><br>
-                            <input type="button" id="btn" name="btn" class="btn btn-default" value="Click Me">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="submit">Submit Button</label><br>
-                            <input type="submit" id="submit" name="submit" class="btn btn-success" value="Submit">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="reset">Reset Button</label><br>
-                            <input type="reset" id="reset" name="reset" class="btn btn-warning" value="Reset">
+
+                        <div class="section-divider"></div>
+
+                        <!-- Buttons -->
+                        <div class="col-md-12 text-center">
+                            <input type="button" id="btn" name="btn" class="btn btn-default btn-block-inline" value="Click Me">
+                            <input type="submit" id="submit" name="submit" class="btn btn-success btn-block-inline" value="Submit">
+                            <input type="reset" id="reset" name="reset" class="btn btn-warning btn-block-inline" value="Reset">
                         </div>
                     </div>
                 </form>
